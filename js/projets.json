@@ -1,0 +1,20 @@
+[
+    {
+        "titre":"Projet alternance BTS: ERP from scratch",
+        "description":"Projet alternance: ERP from scratch",
+        "image":"media/image_erp.png",
+        "lien":""
+    },
+    {
+        "titre":"Application android",
+        "description":"Projet alternance: ERP from scratch",
+        "image":"media/image_erp.png",
+        "lien":"https://github.com/Fayeur9/app_android"
+    },
+    {
+        "titre":"Projet alternance Bachelor: ERP sous Odoo pour Confort&Eau",
+        "description":"Projet alternance: ERP from scratch",
+        "image":"media/image_erp.png",
+        "lien":"https://www.conforteteau.com/"
+    }
+]
