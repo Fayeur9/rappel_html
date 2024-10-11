@@ -1,22 +1,42 @@
-<div id="myDiv" class="box"></div>
+First, ensure you have Node.js and npm installed on your system. You can initialize a new Node.js project and install Express by running:
 
-<button onclick="expandBox()">Expand Box</button>
+npm init -y
+npm install express
+Now, you can create a file named app.js and add the following code:
 
-<style>
-  .box {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-    transition: width 0.5s ease;
-  }
-  .expanded {
-    width: 300px;
-  }
-</style>
+const express = require('express');
+const app = express();
 
-<script>
-  function expandBox() {
-    var element = document.getElementById("myDiv");
-    element.classList.add("expanded");  // Ajoute la classe qui déclenche la transition
+// Define a GET route
+app.get('/data', (req, res) => {
+  const responseData = {
+    message: "Hello, world!",
+    status: "success",
+    data: {
+      id: 1,
+      name: "Sample Item"
+    }
+  };
+
+  // Send the JSON response
+  res.json(responseData);
+});
+
+// Start the server
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(Server is running on http://localhost:${PORT});
+});
+To run the app, execute the following command in your terminal:
+
+node app.js
+Once the server is running, you can visit http://localhost:3000/data in your web browser or use a tool like curl or Postman to make a GET request to that route. You should see a JSON response like this:
+
+{
+  "message": "Hello, world!",
+  "status": "success",
+  "data": {
+    "id": 1,
+    "name": "Sample Item"
   }
-</script>
+}

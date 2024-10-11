@@ -5,16 +5,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Freminet Baptiste</title>
-        <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="css/styles.css">
-        <script href="js/styles.js"></script>
+        <link rel="stylesheet" href="../css/adminlte.min.css">
+        <link rel="stylesheet" href="../css/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+        <!-- <script src="js/styles.js"></script> -->
     </head>
-    <body>
-        <h2>Projets</h2>
-        <div id="div_projets"></div>
-        <script src="js/liste_projets.js"></script>
+    <body id="id_body" class="theme_transition">
+        <nav class="nav_icons">
+            <div class="col-6">
+                <a href="../index.html">
+                    <i class="fa-solid fa-house icon_light_theme icon_theme"></i>
+                </a>
+            </div>
+            <div class="">
+                <i id="icon_theme" class="fa-regular fa-sun icon_theme"></i>
+            </div>
+        </nav>
+        <main class="main_page pl-lg-3">
+            <div class="row p-2 ml-1 border border-dark container_propos text-center">
+                <div class="border border-danger col-lg-4">
+                    <h1>Projet alternance BTS: ERP from scratch</h1>
+                </div>
+                <div class="border border-info col-lg-4">
+                    <h1>Application android</h1>
+                </div>
+                <div class="border border-success col-lg-4">
+                    <h1>Projet alternance Bachelor: ERP sous Odoo pour Confort&Eau</h1>
+                    <span></span>
+                </div>
+            </div>
+        </main>
+        <script src="../js/styles.js"></script>
     </body>
 </html>

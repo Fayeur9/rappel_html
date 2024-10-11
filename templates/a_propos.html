@@ -5,32 +5,59 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Freminet Baptiste</title>
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-        <script href="js/styles.js"></script>
+        <link rel="stylesheet" href="../css/adminlte.min.css">
+        <link rel="stylesheet" href="../css/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <!-- <script src="js/styles.js"></script> -->
     </head>
-    <body>
-        <section id="skills">
-            <h2>Mes Compétences</h2>
-            <ul>
-                <li><a href="/projects.html">HTML/CSS</a></li>
-                <li><a href="/projects.html">JavaScript</a></li>
-                <li><a href="/projects.html">PHP</a></li>
-                <li><a href="/projects.html">Java</a></li>
-                <li><a href="/projects.html">Python</a></li>
-                <li><a href="/projects.html">Base de données (SQL/NoSQL)</a></li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <span>Vous pouvez me contacter via :</span>
-            <ul>
-                <li>Email : <a href="baptiste.freminet@gmail.com">baptiste.freminet@gmail.com</a></li>
-                <li>LinkedIn : <a href="https://www.linkedin.com/in/baptiste-freminet" target="_blank">Mon LinkedIn</a></li>
-                <li>GitHub : <a href="https://github.com/Fayeur9" target="_blank">Mon GitHub</a></li>
-            </ul>
-        </section>
+    <body id="id_body" class="theme_transition">
+        <nav class="nav_icons">
+            <div class="col-6">
+                <a href="../index.html">
+                    <i class="fa-solid fa-house icon_light_theme icon_theme"></i>
+                </a>
+            </div>
+            <div class="">
+                <i id="icon_theme" class="fa-regular fa-sun icon_theme"></i>
+            </div>
+        </nav>
+        <main class="main_page pl-lg-3">
+            <div class="row p-2 ml-1 border border-success container_propos">
+                <div class="border border-danger col-lg-5">
+                    <h2>Mes Compétences</h2>
+                    <ul>
+                        <li><a href="projects.html">HTML/CSS</a></li>
+                        <li><a href="projects.html">JavaScript</a></li>
+                        <li><a href="projects.html">PHP</a></li>
+                        <li><a href="projects.html">Java</a></li>
+                        <li><a href="projects.html">Python</a></li>
+                        <li><a href="projects.html">Base de données (SQL/NoSQL)</a></li>
+                    </ul>
+                </div>
+                <div class="border border-info col-lg-5">
+                    <h2>Contact</h2>
+                    <span>Vous pouvez me contacter via :</span>
+                    <ul>
+                        <li>Email : <a href="https://gmail.com">baptiste.freminet@gmail.com</a></li>
+                        <li>LinkedIn : <a href="https://www.linkedin.com/in/baptiste-freminet" target="_blank">Mon LinkedIn</a></li>
+                        <li>GitHub : <a href="https://github.com/Fayeur9" target="_blank">Mon GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 border border-dark align-content-center">
+                    <form class="form-group row p-2" id="form_contact">
+                        <input class="col-lg-6 p-2 mb-4" type="text" placeholder="Nom">
+                        <input class="col-lg-6 p-2 mb-4" type="text" placeholder="Prenom">
+                        <input class="col-lg-6 p-2 mb-4" type="text" placeholder="Téléphone">
+                        <input class="col-lg-6 p-2 mb-4" type="text" placeholder="Mail">
+                        <select id="select_pays" class="custom-select form-control-border mb-4" id="">
+                            <option selected>Choisissez un pays</option>
+                        </select>
+                        <textarea class="col-lg-12 align-items-end mb-5" id="" placeholder="Votre Message"></textarea>
+                        <button class="btn btn-info col-lg-12 mt-5">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <script src="../js/styles.js"></script>
     </body>
 </html>

@@ -10,33 +10,32 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <!-- <script src="js/styles.js"></script> -->
     </head>
-    <body>
-        <section class="container row align-content-center">
+    <body id="id_body" class="theme_transition">
+        <nav class="nav_icons">
             <div class="">
-                <i id="icon_light" class="fa-regular fa-sun icon_light_theme switch_theme"></i>
-                <i id="icon_dark" class="fa-regular fade fa-moon icon_light_theme switch_theme"></i>
+                <i id="icon_theme" class="fa-regular fa-sun icon_theme"></i>
             </div>
             <!-- <div class="col-6">
                 <i class="fa-solid fa-house icon_light_theme"></i>
             </div> -->
-        </section>
-        <section class="description">
-            <div class="description_left">
-                <a href="/index.html">
-                    <span class="description_title">Bienvenue<br></span>
-                    <span>
-                        Je suis Baptiste, un développeur passionné par le développement backend et les nouvelles technologies.<br>
-                    </span>
-                </a>
-            </div>
-            <div class="description_right">
-                <a href="/index.html">
-                    <img class="image_intro item_zoom" src="media/image.png"></img>
-                </a>
-            </div>
-        </section>
-    </body>
-    <footer>
+        </nav>
+        <main class="main_page">
+            <section class="description">
+                <div class="description_left">
+                    <a href="templates/a_propos.html">
+                        <span class="description_title">Bienvenue<br></span>
+                        <span>
+                            Je m'appelle Baptiste, je suis un développeur full-stack basé à Périgueux, en France.
+                        </span>
+                    </a>
+                </div>
+                <div class="description_right">
+                    <a href="templates/projects.html">
+                        <img id="image_project" class="image_intro item_zoom" src="media/image_light.png"></img>
+                    </a>
+                </div>
+            </section>
+        </main>
         <script src="js/styles.js"></script>
-    </footer>
+    </body>
 </html>
