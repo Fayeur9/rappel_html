@@ -1,0 +1,22 @@
+<div id="myDiv" class="box"></div>
+
+<button onclick="expandBox()">Expand Box</button>
+
+<style>
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: width 0.5s ease;
+  }
+  .expanded {
+    width: 300px;
+  }
+</style>
+
+<script>
+  function expandBox() {
+    var element = document.getElementById("myDiv");
+    element.classList.add("expanded");  // Ajoute la classe qui déclenche la transition
+  }
+</script>
