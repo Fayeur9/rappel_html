@@ -1,3 +1,7 @@
+/*
+Pardon pour l'état du css, ça faisait longtemps que je n'en avais pas fait
+Je n'ai pas eu la fois de le refaire "au propre" quand j'ai à peu près retrouvé mes marques
+*/
 body {
     font-family: monospace;
     transition: background-color 1.5s ease;
@@ -16,30 +20,27 @@ body {
 
 .image_container {
     margin-top: 1vh;
-    position: relative;
     border-radius: 20px;
-    overflow: hidden; /* Empêche l'image de sortir du conteneur */
+    position: relative;
+    overflow: hidden;
     display: block;
 }
 
-/* Applique un zoom lors du survol */
 .image_container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 1s ease; /* Animation douce pour le zoom */
+    transition: transform 1s ease;
 }
 
-/* Ajout du voile blanc par défaut, avec plus d'opacité */
 .image_container::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 50%; /* Le voile couvre 50% de l'image de base */
+    height: 50%;
     background: linear-gradient(to top, #B3E4DE, rgba(255, 255, 255, 0));
-    /* Opacité augmentée à 0.9 pour rendre le voile plus visible */
 }
 
 .titre_projet{
@@ -51,29 +52,34 @@ body {
     padding-bottom: 4vh;
 }
 
-/* Zoom sur l'image sans sortir du conteneur */
 .image_container:hover img {
-    transform: scale(1.2); /* Zoom à 120% */
+    transform: scale(1.2);
 }
 
 .icon_project_light{
+    color: black;
     width: 2vh;
     font-size: 2vh;
-    color: black;
 }
 
 .container_projet{
     background-color: white;
     border-radius: 30px;
 }
+.pb-xs-5{
+    padding-bottom:2rem!important
+}
+
+.mb-xs-5{
+    margin-bottom:2rem!important
+}
+
 .container_icons{
-    /* display: flexbox; */
     justify-self: felx-end;
-    position: absolute;
     bottom: 0;
     left: 48%;
+    position: absolute;
     width: auto;
-    /* background-color: red; */
 }
 
 .icon_theme{
@@ -96,8 +102,8 @@ body {
 }
 
 .nav_icons{
-    display: flex;
     height: 10vh;
+    display: flex;
     justify-content: end;
 }
 
@@ -119,32 +125,32 @@ body {
     align-items: center;
 }
 .description_left{
-    transition: transform 1s ease;
+    text-align: center;
     font-size: 5vw;
     padding: 5vw 5vw;
-    text-align: center;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 1s ease;
 }
 .description_left:hover{
     transform: scale(1.1);
 }
 .description_right {
-    transition: transform 1s ease;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 1s ease;
 }
 .description_right:hover{
     transform: scale(1.1);
 }
 .description_title{
-    justify-content: center;
     font-size: 2em;
     padding-bottom: 3%;
+    justify-content: center;
 }
 a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
 }
 a:hover{
     color: white;
@@ -161,20 +167,16 @@ a:hover{
 
     .description_left{
         font-size: 2em;
+        padding: 2vw 5vw 1vw 5vw;
         text-align: center;
         justify-content: center;
-        padding: 2vw 5vw 1vw 5vw;
     }
 
     .description_right {
+        padding-top: 3vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 3vh;
-    }
-    a {
-        text-decoration: none;
-        /* color: blue; */
     }
     .image_intro{
         max-height: 60vh;
@@ -194,25 +196,15 @@ a:hover{
     .description_left{
         width: 40vw;
         font-size: 2em;
+        border: 5px;
         text-align: center;
         justify-content: center;
-        border: 5px;
-        border-color: red;
-    }
-
-    a {
-        text-decoration: none;
-        /* color: red; */
     }
     .description_right {
         max-width: 50vw;
-        /* width: 49vw; */
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    .image_intro{
-        /* max-height: 800vh; */
     }
     .projects{
         display: flexbox;

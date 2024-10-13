@@ -5,22 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Freminet Baptiste</title>
-        <link rel="stylesheet" href="css/adminlte.min.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <!-- Import librairies css -->
+        <link rel="stylesheet" href="../css/adminlte.min.css">
+        <!-- Import css après la librairie pour la réécrire si besoin -->
+        <link rel="stylesheet" href="../css/styles.css">
+        <!-- Import icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <!-- <script src="js/styles.js"></script> -->
     </head>
     <body id="id_body" class="theme_transition">
         <nav class="nav_icons">
-            <div class="">
-                <i id="icon_theme" class="fa-regular fa-sun icon_theme"></i>
-            </div>
-            <!-- <div class="col-6">
-                <i class="fa-solid fa-house icon_light_theme"></i>
-            </div> -->
+            <!-- switch theme button -->
+            <i id="icon_theme" class="fa-regular fa-sun icon_theme"></i>
         </nav>
         <main class="main_page">
             <section class="description">
+                <!-- bloc cliquable envoie à propos -->
                 <div class="description_left">
                     <a href="templates/a_propos.html">
                         <span class="description_title">Bienvenue<br></span>
@@ -29,6 +28,7 @@
                         </span>
                     </a>
                 </div>
+                <!-- bloc cliquable envoie projets -->
                 <div class="description_right">
                     <a href="templates/projects.html">
                         <img id="image_project" class="image_intro item_zoom" src="media/image_light.png"></img>

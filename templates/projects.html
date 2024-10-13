@@ -5,28 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Freminet Baptiste</title>
+        <!-- Import librairies css -->
         <link rel="stylesheet" href="../css/adminlte.min.css">
+        <!-- Import css après la librairie pour la réécrire si besoin -->
         <link rel="stylesheet" href="../css/styles.css">
+        <!-- Import icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <!-- <script src="js/styles.js"></script> -->
     </head>
     <body id="id_body" class="theme_transition">
         <nav class="nav_icons">
+            <!-- home button -->
             <div class="col-6">
-                <!-- <a href="../index.html">
-                    <i class="fa-solid fa-house icon_light_theme icon_theme"></i>
-                </a> -->
                 <a href="../index.html">
                     <i class="fa-solid fa-house icon_light_theme icon_theme"></i>
                 </a>
             </div>
-            <div class="">
-                <i id="icon_theme" class="fa-regular fa-sun icon_theme"></i>
-            </div>
+            <!-- switch theme button -->
+            <i id="icon_theme" class="fa-regular fa-sun icon_theme"></i>
         </nav>
         <main class="main_page pl-lg-3">
             <div class="row p-2 ml-1 container_propos text-center">
-                <div class="col-lg-3 col-md-5 container_projet">
+                <!-- projet ERP Janoschka -->
+                <div class="col-lg-3 col-md-5 mb-sm-4 mb-xs-5 pb-sm-5 pb-xs-5 container_projet">
                     <div class="image_container">
                         <img src="../media/Janoschka.png" alt="" class="image_projets rounded-sm"></img>
                     </div>
@@ -40,7 +40,8 @@
                     </div>
                     <!-- <img src="../media/github.png" alt="" class="icon_github"> -->
                 </div>
-                <div class="col-lg-3 col-md-5 container_projet">
+                <!-- projet app Android -->
+                <div class="col-lg-3 col-md-5 mb-sm-4 mb-xs-5 pb-sm-5 pb-xs-5 container_projet">
                     <div class="image_container">
                         <img src="../media/android_studio.png" alt="" class="image_projets rounded-sm"></img>
                     </div>
@@ -55,23 +56,27 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-5 container_projet">
-                    <div class="image_container">
-                        <img src="../media/CEE.png" alt="" class="image_projets rounded-sm"></img>
-                    </div>
-                    <h3>Projet alternance Bachelor: ERP sous Odoo pour Confort&Eau</h3>
-                    <span>
-                        Dans le cadre de mon bachelor, je suis en charge du développement de customisation sur l'ERP
-                        Odoo pour mieux correspondre aux besoins et contraintes de mon entreprise.
-                    </span>
-                    <div class="container_icons">
-                        <a href="https://www.conforteteau.com/" target="_blank">
-                            <i class="fa-solid fa-globe icon_project_light"></i>
-                        </a>
+                <!-- projet ERP odoo Confort & Eau -->
+                <div class="col-lg-3 col-md-5 mb-sm-4 mb-xs-5 pb-sm-5 pb-xs-5 container_projet">
+                    <div>
+                        <div class="image_container">
+                            <img src="../media/CEE.png" alt="" class="image_projets rounded-sm"></img>
+                        </div>
+                        <h3>Projet alternance Bachelor: ERP sous Odoo pour Confort&Eau</h3>
+                        <span class="mb-3 pb-3">
+                            Dans le cadre de mon bachelor, je suis en charge du développement de customisation sur l'ERP
+                            Odoo pour mieux correspondre aux besoins et contraintes de mon entreprise.
+                        </span>
+                        <div class="container_icons">
+                            <a href="https://www.conforteteau.com/" target="_blank">
+                                <i class="fa-solid fa-globe icon_project_light"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
+        <!-- import js après le chargement du DOM -->
         <script src="../js/styles.js"></script>
     </body>
 </html>
