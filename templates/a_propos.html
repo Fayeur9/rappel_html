@@ -24,9 +24,48 @@
             <i id="icon_theme" class="fa-regular fa-sun icon_theme"></i>
         </nav>
         <main class="main_page pl-lg-3">
-            <div class="row p-2 ml-1 border border-success container_propos">
+            <div class="row p-2 ml-1 container_propos">
+                <!-- bloc cursus -->
+                <div class=" col-lg-6">
+                    <div class="title_container">
+                        <h2>Mon cursus:</h2>
+                    </div>
+                    <div class="container_cursus">
+                        <!-- home button -->
+                        <div class="bloc_cursus pb-4 pl-5">
+                            <div class="annee_bloc_cursus">
+                                2019-2021
+                            </div>
+                            <div class="description_bloc_cursus">
+                                Lycée Elie-vinet
+                                Bac Général option maths-physique
+                            </div>
+                        </div>
+                        <!-- home button -->
+                        <div class="bloc_cursus pb-4 pl-5">
+                            <div class="annee_bloc_cursus">
+                                2021-2023
+                            </div>
+                            <div class="description_bloc_cursus">
+                                Lycée Elie-vinet
+                                BTS SIO option SLAM
+                            </div>
+                        </div>
+                        <!-- home button -->
+                        <div class="bloc_cursus pb-4 pl-5">
+                            <div class="annee_bloc_cursus">
+                                2024-2025
+                            </div>
+                            <div class="description_bloc_cursus">
+                                LiveCampus
+                                Bachelor Développeur Full
+                                Stack - Data & DevOps
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- bloc compétences -->
-                <div class="border border-danger col-lg-5">
+                <div class="col-lg-5">
                     <h2>Mes Compétences</h2>
                     <ul>
                         <li><a href="projects.html">HTML/CSS</a></li>
@@ -37,29 +76,30 @@
                         <li><a href="projects.html">Base de données (SQL/NoSQL)</a></li>
                     </ul>
                 </div>
-                <!-- bloc contacts -->
-                <div class="border border-info col-lg-5">
-                    <h2>Contact</h2>
-                    <span>Vous pouvez me contacter via :</span>
-                    <ul>
-                        <li>Email : <a href="https://gmail.com">baptiste.freminet@gmail.com</a></li>
-                        <li>LinkedIn : <a href="https://www.linkedin.com/in/baptiste-freminet" target="_blank">Mon LinkedIn</a></li>
-                        <li>GitHub : <a href="https://github.com/Fayeur9" target="_blank">Mon GitHub</a></li>
-                    </ul>
-                </div>
                 <!-- bloc formulaire -->
-                <div class="col-lg-12 border border-dark align-content-center">
+                <div class="col-lg-12 align-content-center">
                     <form class="form-group row p-2" id="form_contact">
                         <input class="col-lg-6 p-2 mb-4" type="text" placeholder="Nom">
                         <input class="col-lg-6 p-2 mb-4" type="text" placeholder="Prenom">
                         <input class="col-lg-6 p-2 mb-4" type="text" placeholder="Téléphone">
                         <input class="col-lg-6 p-2 mb-4" type="text" placeholder="Mail">
-                        <select id="select_pays" class="custom-select form-control-border mb-4" id="">
+                        <select id="select_pays" class="custom-select border border-black mb-4" id="">
                             <option selected>Choisissez un pays</option>
                         </select>
-                        <textarea class="col-lg-12 align-items-end mb-5" id="" placeholder="Votre Message"></textarea>
+                        <textarea class="col-lg-12 align-items-end mb-5 " id="" placeholder="Votre Message"></textarea>
                         <button class="btn btn-info col-lg-12 mt-5">Envoyer</button>
                     </form>
+                </div>
+                <!-- bloc contacts -->
+                <div class="col-lg-12">
+                    <ul class="d-flex justify-content-around">
+                        <a href="https://gmail.com"><i class="fa-solid fa-envelope"></i>
+                            baptiste.freminet@gmail.com</a>
+                        <a href="https://www.linkedin.com/in/baptiste-freminet" target="_blank"><i class="fa-brands fa-linkedin"></i>
+                            Mon LinkedIn</a>
+                        <a href="https://github.com/Fayeur9" target="_blank"><i class="fa-brands fa-github"></i>
+                            Mon GitHub</a>
+                    </ul>
                 </div>
             </div>
         </main>
