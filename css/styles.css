@@ -15,7 +15,9 @@ body {
 }
 
 .image_container {
+    margin-top: 1vh;
     position: relative;
+    border-radius: 20px;
     overflow: hidden; /* Empêche l'image de sortir du conteneur */
     display: block;
 }
@@ -42,7 +44,11 @@ body {
 
 .titre_projet{
     font-size: 2.8vw;
-    font
+
+}
+.container_projet h3{
+    padding-top: 2vh;
+    padding-bottom: 4vh;
 }
 
 /* Zoom sur l'image sans sortir du conteneur */
@@ -50,8 +56,24 @@ body {
     transform: scale(1.2); /* Zoom à 120% */
 }
 
-.icon_github{
-    width: 3.5vw;
+.icon_project_light{
+    width: 2vh;
+    font-size: 2vh;
+    color: black;
+}
+
+.container_projet{
+    background-color: white;
+    border-radius: 30px;
+}
+.container_icons{
+    /* display: flexbox; */
+    justify-self: felx-end;
+    position: absolute;
+    bottom: 0;
+    left: 48%;
+    width: auto;
+    /* background-color: red; */
 }
 
 .icon_theme{
