@@ -14,6 +14,46 @@ body {
     background-color: #5F727D;
 }
 
+.image_container {
+    position: relative;
+    overflow: hidden; /* Empêche l'image de sortir du conteneur */
+    display: block;
+}
+
+/* Applique un zoom lors du survol */
+.image_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1s ease; /* Animation douce pour le zoom */
+}
+
+/* Ajout du voile blanc par défaut, avec plus d'opacité */
+.image_container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* Le voile couvre 50% de l'image de base */
+    background: linear-gradient(to top, #B3E4DE, rgba(255, 255, 255, 0));
+    /* Opacité augmentée à 0.9 pour rendre le voile plus visible */
+}
+
+.titre_projet{
+    font-size: 2.8vw;
+    font
+}
+
+/* Zoom sur l'image sans sortir du conteneur */
+.image_container:hover img {
+    transform: scale(1.2); /* Zoom à 120% */
+}
+
+.icon_github{
+    width: 3.5vw;
+}
+
 .icon_theme{
     color: #5F727D;
     font-size: 5vh;

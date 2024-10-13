@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voile et Zoom sur Image</title>
+    <title>Voile Blanche sur une Image</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="image-container">
-    <img src="../media/exemple_projet_1.png" alt="Image de démonstration">
+    <img src="https://via.placeholder.com/800x600" alt="Image de démonstration">
 </div>
 
 </body>
